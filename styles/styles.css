@@ -205,6 +205,10 @@ section.footer {
     list-style: none;
 }
 
+#imageSet1 {
+    list-style: none;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .card1 {

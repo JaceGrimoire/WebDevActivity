@@ -8,3 +8,14 @@
         } 
     });  
   });
+
+ $(document).ready(function() {
+    $('#imageSet2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        pager:true,
+        onSliderLoad: function() {
+            $('#imageSet2').removeClass('cS-hidden');
+        } 
+    });  
+  });
