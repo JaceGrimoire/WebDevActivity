@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>JVideos</title>
+        
         <link rel="apple-touch-icon" sizes="57x57" href="src/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="src/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="src/apple-icon-72x72.png">
@@ -15,20 +16,23 @@
         <link rel="icon" type="image/png" sizes="96x96" href="src/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png">
         <link rel="manifest" href="src/manifest.json">
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
-<!--        <meta name="msapplication-TileColor" content="#ffffff">-->
+        
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--        <meta name="theme-color" content="#ffffff">-->
+        
+        
+        <link rel="stylesheet" type="text/css" href="styles/lightslider.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        
     </head>
     <body>
         <header>
             <img src="src/logo.png" id="top_logo" alt="logo">
             <nav>
                 <ul class="menu_items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#search">Search</a></li>
-                    <li><a href="#profile">Profile</a></li>
+                    <li class="item_menu"><a href="index.html">Home</a></li>
+                    <li class="item_menu"><a href="#search">Search</a></li>
+                    <li class="item_menu"><a href="#profile">Profile</a></li>
                 </ul>
             </nav>
             
@@ -47,31 +51,38 @@
                 <h3>Must Watch (TO ADD MORE DURING JS USING JQUERY SLIDER)</h3>
             </div>
             <div class="view_previews">
-                <div class="card1">
-                    <div class="card_content1">
-                        <h3>Bokutachi wa Benkyou ga Dekinai</h3>
-                        <p>This is where a small synopsis will go</p>
-                        <a href="#readmore">Read More</a>
-                    </div>
-                    <img src="src/char1.png">
-                </div>
-                <div class="card1">
-                    <div class="card_content1">
-                        <h3>Kiznaiver</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at neque iaculis justo auctor feugiat et sed nulla. Donec ut dictum magna. Nam id pharetra risus. Cras nibh leo, pretium a pellentesque in, iaculis quis leo.</p>
-                        <a href="#readmore">Read More</a>
-                    </div>
-                    <img src="src/char2.png">
-                </div>
-                <div class="card1">
-                    <div class="card_content1">
-                        <h3>Shigatsu wa Kimi no Uso</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at neque iaculis justo auctor feugiat et sed nulla. Donec ut dictum magna. Nam id pharetra risus. Cras nibh leo, pretium a pellentesque in, iaculis quis leo.</p>
-                        <a href="#readmore">Read More</a>
-                    </div>
-                    <img src="src/char3.png">
-                </div>
-                
+                <ul id="imageSet1" class="cS-hidden">
+                    <li class="item-a">
+                        <div class="card1">
+                            <div class="card_content1">
+                                <h3>Bokutachi wa Benkyou ga Dekinai</h3>
+                                <p>This is where a small synopsis will go</p>
+                                <a href="#readmore">Read More</a>
+                            </div>
+                            <img src="src/char1.png">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="card1">
+                            <div class="card_content1">
+                                <h3>Kiznaiver</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at neque iaculis justo auctor feugiat et sed nulla. Donec ut dictum magna. Nam id pharetra risus. Cras nibh leo, pretium a pellentesque in, iaculis quis leo.</p>
+                                <a href="#readmore">Read More</a>
+                            </div>
+                            <img src="src/char2.png">
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="card1">
+                            <div class="card_content1">
+                                <h3>Shigatsu wa Kimi no Uso</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at neque iaculis justo auctor feugiat et sed nulla. Donec ut dictum magna. Nam id pharetra risus. Cras nibh leo, pretium a pellentesque in, iaculis quis leo.</p>
+                                <a href="#readmore">Read More</a>
+                            </div>
+                            <img src="src/char3.png">
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="separator">
                 <h3>Latest Release</h3>
@@ -112,5 +123,9 @@
                 <p id="copyright">English</p>
             </div>
         </section>
+        
+        <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+        <script type="text/javascript" src="script/lightslider.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
     </body>
 </html>
