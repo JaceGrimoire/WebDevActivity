@@ -9,6 +9,19 @@ body {
     overflow-x: hidden;
 }
 
+#navbar {
+    background-color: #172545; 
+    position: fixed; 
+    top: -100px; 
+    width: 100%; 
+    z-index: 1000;
+    transition: top 0.3s; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+}
+
 body::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -54,7 +67,6 @@ header{
     height: 100vh;
     display: flex;
     justify-content: space-between;
-/*    align-items: center;*/
     padding: 100px;
     box-sizing: border-box;
     background: linear-gradient(180deg, #464e89, #153e81),url(../src/bgWelcome.png);
@@ -209,9 +221,19 @@ section.footer {
     list-style: none;
 }
 
-
-@media only screen and (max-width: 1200px) {
-    .card1 {
-        
+@media only screen and (max-width: 1050px) {
+    .welcome {
+        display: block;
+    }
+    
+    .side_img {
+        visibility: hidden;
     }
 }
+
+@media only screen and (max-width: 530px) {
+    #paragraph {
+        font-size: 1em;
+    }
+}
+
