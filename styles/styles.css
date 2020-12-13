@@ -271,3 +271,7 @@ section.footer {
 .search_field:focus {
     border-bottom: 2px solid #2668ff;
 }
+
+.search_results {
+    height: 50%;
+}
