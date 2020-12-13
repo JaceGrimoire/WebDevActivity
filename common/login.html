@@ -4,28 +4,39 @@
         <link rel=stylesheet type="text/css" href="../styles/styles.css">
     </head>
     <body>
-        <section>
+        <header>
+            <img src="../src/logo.png" id="top_logo" alt="logo">
+            <nav>
+                <ul class="menu_items">
+                    <li class="item_menu"><a class="menu_link" href="../index.html">Home</a></li>
+                    <li class="item_menu"><a class="menu_link" href="common/search.html">Search</a></li>
+                    <li class="item_menu"><a class="menu_link" href="login.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="login_form">
             <div class="box">
                 <div class="form">
                     <h2>Login</h2>
                     <form>
                         <div class="inputBox">
                             <input type="text" placeholder="Username">
-                            <img src="../src/user.png">
+                            <img src="../src/user.png" style="width: 30px;">
                         </div>
+                        
                         <div class="inputBox">
                             <input type="password" placeholder="Password">
-                            <img src="../src/lock.png">
+                            <img src="../src/lock.png" style="width: 30px;">
                         </div>
-                        <p><a href="#">Forgot Password</a></p>
-                        <label class="remember"><input type="checkbox">Remember Me
-                        </label>
-                        <input type="submit" value="Login">
+                        <label class="remember"><input type="checkbox">Remember Me<br></label>
+                        <div class="inputBox">
+                            <input type="submit" value="Login">
+                        </div>
+                        <p><a class="linkToForget" href="#">Forgot Password</a></p>
                     </form>
                 </div>
             </div>
         </section>
-        
         
         <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
         <script type="text/javascript" src="../script/script.js"></script>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family="Montserrat:500');
 
+
 body {
     background: #172545;
     margin: 0;
@@ -78,7 +79,7 @@ header{
 }
 
 
-li, a {
+li, .menu_link {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -275,3 +276,108 @@ section.footer {
 .search_results {
     height: 50%;
 }
+
+.login_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2952af, #62a9ef), url(../src/login_bg.png);
+    background-blend-mode: multiply;
+    background-position: center;
+    filter: hue-rotate(20deg)
+}
+
+.box {
+    position: relative;
+    padding: 50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%);
+}
+
+.form h2 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.form .inputBox input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    padding-left: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+
+.form .inputBox input::placeholder {
+    color:#ffffff;
+}
+
+.form .inputBox input[type="submit"] {
+    background: #fff;
+    color: #111;
+    max-width: 100px;   
+    padding: 8px 10px;
+    margin-top: 10px;
+    box-shadow: none;   
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+    
+}
+
+.form .inputBox img {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    transform: scale(0.7);
+    filter: invert(1)
+}
+
+.remember {
+    color: #fff;
+}
+
+.linkToForget {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkToForget:hover {
+    color:aqua
+}
+
