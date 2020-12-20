@@ -285,7 +285,7 @@ section.footer {
     background: linear-gradient(180deg, #2952af, #62a9ef), url(../src/login_bg.png);
     background-blend-mode: multiply;
     background-position: center;
-    filter: hue-rotate(20deg)
+    filter: hue-rotate(10deg)
 }
 
 .box {
@@ -378,6 +378,115 @@ section.footer {
 }
 
 .linkToForget:hover {
-    color:aqua
+    color:aqua;
 }
 
+.headState {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%%;
+    margin: 20px;
+    align-items: center;
+}
+
+h1#username {
+    color: #fff;
+    max-width: 300px;
+    margin:0;
+}
+
+.nameState p {
+    color: #fff;
+    max-width: 300px;
+    margin:0;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+    padding: 10px;
+    grid-gap: 50px;
+    width: 93%;
+    grid-row-gap: 10px;
+}
+
+.grid_item {
+    background-color: #233869;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: #ffffff;
+    min-width: 200px;
+}
+
+.grid_item h1 {
+    font-size: 40px;
+}
+
+.card_content1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container_info {
+    color: #fff;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container_info_desc p {
+    color: #97a7c0;
+}
+
+.container_info_desc#anime_title {
+    font-size: 2em;
+}
+
+.container_info_desc {
+    max-width: 700px;
+}
+
+.genre {
+    background-color: #348fff;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.rates {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-content: center;
+}
+
+.rating, .watched {
+    background: #233869;
+    align-content: center;
+    text-align: center;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.rating h1, .watched h1 {
+    color: #2b43f5;
+}
+
+.gotoVid {
+    width: 100%;
+    background: #1628fd;
+    border: none;
+    color: #ffffff;
+}
+
+.side_img_info {
+    height: 100vh;
+}
